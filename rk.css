@@ -1,0 +1,210 @@
+body {
+    font-family: "Playfair Display", serif;
+    position: relative;
+    background: #304352;
+    background: -webkit-linear-gradient(to bottom, #304352, #d7d2cc);
+    background: aliceblue;
+  }
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+.wrapper .receipt {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: #ffffff;
+    width: 90%;
+    max-width: 830px;
+    padding: 1.5em;
+    border: 2px solid black;
+  }
+.wrapper .receipt h1 {
+    text-align: center;
+    font-size: 55px;
+    margin-top: -75px;
+    color: white;
+    margin-bottom: 5px;
+    position: relative;
+  }
+.wrapper .receipt h1:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+    z-index: -1;
+    display: block;
+    height: 100%;
+    width: 40%;
+    top: 70%;
+    background: black;
+    min-width: 275px;
+  }
+.wrapper .receipt .left, body .wrapper .receipt .right {
+    margin-top: 1em;
+  }
+.wrapper .receipt div.left {
+    width: 30%;
+    float: left;
+    position: relative;
+    padding-top: 1em;
+    padding-left: 0.5em;
+  }
+.wrapper .receipt div.left div {
+    display: block;
+    position: relative;
+  }
+.wrapper .receipt div.left div:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    background:black;
+    border-radius: 100%;
+    left: 30px;
+    top: -40px;
+  }
+.wrapper .receipt div.left:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 0px;
+    background-size: 6px;
+    border: 1px solid #231f20;
+    box-shadow: 5px 5px 0px rgb(170, 149, 149);
+  }
+.wrapper .receipt div.right {
+    width: 60%;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+  }
+.wrapper .receipt div.right ul {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+  }
+.wrapper .receipt div.right ul:nth-of-type(2) {
+    margin-top: 20px;
+    position: relative;
+  }
+.wrapper .receipt div.right ul:nth-of-type(2):before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    left: 5%;
+    top: -5%;
+    background: #faf9fa;
+  }
+ .wrapper .receipt div.right ul:nth-of-type(2) li:after {
+    background: #ffffff;
+  }
+.wrapper .receipt div.right ul li {
+    display: block;
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+.wrapper .receipt div.right ul li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: -webkit-linear-gradient(to right, #304352, #d7d2cc);
+    background: black;
+  }
+.wrapper .receipt div.right ul li:last-of-type:after {
+    display: none;
+  }
+ .wrapper .receipt div.right ul li span {
+    float: right;
+    color: black;
+  }
+ .wrapper .receipt div.right ul li span b {
+    font-size: 0.5em;
+    vertical-align: super;
+    margin-right: 2.5px;
+  }
+.wrapper .receipt img {
+    max-width: 300px;
+    display: block;
+    width: 100%;
+    margin-top: 50%;
+    transform: translateY(-35%);
+  }
+ .wrapper .footer {
+    display: block;
+    width: 100%;
+    padding-top: 0.5em;
+    clear: both;
+  }
+   .wrapper .footer p {
+    max-width: 40%;
+    width: 100%;
+    float: left;
+    display: block;
+    font-size: 0.9em;
+    margin-top: 65px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:black;
+  }
+ .wrapper .footer p span {
+    color: #594f51;
+    margin-left: 10px;
+    border-bottom: 1px dashed;
+    display: inline-block;
+  }
+.wrapper .footer .qr {
+    max-width: 60px;
+    font-size: 0.6em;
+    font-weight: bold;
+    text-align:center;
+    display: block;
+    float: right;
+    color: black;
+  }
+.wrapper .footer .qr img {
+    max-width: 100%;
+    
+  }
+.wrapper .footer .address {
+    clear: both;
+    display: block;
+    width: calc(100%);
+    background: black;
+    padding: 25px;
+    margin-bottom: -25px;
+    margin-left: -25px;
+  }
+.wrapper .footer .address p {
+    color:white;
+    float: none;
+    margin: 10px 0px;
+    font-family: "Inconsolata", sans-serif;
+    width: auto;
+    max-width: none;
+  }
+  .wrapper .footer .address p b {
+    font-family: "Playfair Display", serif;
+    font-size: 0.9em;
+    color:white;
+  }
+.wrapper .footer .address p span {
+    display: inline;
+    border-bottom: none;
+    color: white;
+  }
